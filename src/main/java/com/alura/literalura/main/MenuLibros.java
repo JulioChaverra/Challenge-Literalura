@@ -32,13 +32,26 @@ public class MenuLibros {
             try { opcion = Integer.parseInt(s); } catch (Exception e) { continue; }
 
             switch (opcion) {
-                case 1 -> buscarPorTitulo();
-                case 2 -> listarLibros();
-                case 3 -> listarAutores();
-                case 4 -> autoresVivos();
-                case 5 -> librosPorIdioma();
-                case 0 -> System.out.println("0 - salir");
-                default -> System.out.println("Opción inválida");
+                case 1:
+                    buscarPorTitulo();
+                    break;
+                case 2:
+                    listarLibros();
+                    break;
+                case 3:
+                    listarAutores();
+                    break;
+                case 4:
+                    autoresVivos();
+                    break;
+                case 5:
+                    librosPorIdioma();
+                    break;
+                case 0:
+                    System.out.println("Saliendo...");
+                    break;
+                default:
+                    System.out.println("Opcion invalida");
             }
         }
     }
@@ -106,7 +119,7 @@ public class MenuLibros {
         }
         var vivos = service.autoresVivosEn(year);
         if (vivos.isEmpty()) {
-            System.out.println("(Sin autores vivos en ese año)");
+            System.out.println("Sin autores vivos en ese año");
             return;
         }
         vivos.forEach(this::imprimirAutorFormatoCaptura);
