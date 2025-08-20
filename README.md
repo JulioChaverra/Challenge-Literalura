@@ -47,17 +47,23 @@ DB_USER:postgres
 spring.main.web-application-type=none
 
 
-Windows (PowerShell):
+# Windows (PowerShell):
 
 setx DB_HOST "localhost"
+
 setx DB_NAME "tu_database"
+
 setx DB_USER "postgres"
+
 setx DB_PASSWORD "tu_password"
 
 
-Git Bash:
+# Git Bash:
 
 export DB_HOST=localhost
+
 export DB_NAME=tu_database
+
 export DB_USER=postgres
+
 export DB_PASSWORD=tu_password
