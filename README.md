@@ -35,8 +35,11 @@ Formato de salida bonito en consola (bloques)
 La app lee estas variables de entorno del sistema:
 
 DB_HOST:localhost
+
 DB_NAME:"tu_database"
+
 DB_PASSWORD:"tu_contraseña"
+
 DB_USER:postgres
 
 
